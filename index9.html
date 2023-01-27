@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+   /* const avg={
+      max:90.45,
+      maths:67.08,
+      eng:89.24,
+      spo:99,
+      min:56.44
+    }
+
+    const add=(function(){
+      return function add({max,min}){
+        return (max+min)/2
+      }
+    })();
+
+    console.log(add(avg))
+    console.log(avg)  
+
+    const person={
+      name:"Ezra",age:22
+    };
+    //const x=``;
+    console.log(`My name is ${person.name}`) */
+
+    /*const result ={
+      arsenal:["Saka","Martin","Ben"],
+      chelsea:["mount","james","hakim"],
+      spurs:["kane","son","yves"]
+    }
+    const add=(function(){
+      return function add(arr){
+        const Array=[]
+        for(var i1=0;i1 < arr.length;++i1){
+          Array.push(`<li class="text-warning">${arr[i1]}</li>`)
+        }
+        return Array;
+      }
+    })();
+
+    const Add=add(result.chelsea);
+    console.log(Add);  
+     
+    const add=(name,sex,age)=>({ name,age,sex })
+    console.log(add("Ezra","M",22)) */ 
+function makeFruit(){
+    class fruit{
+      constructor(eat){
+        this.eat=eat;
+      }
+    }
+    return fruit
+}
+    const fruit=makeFruit();
+    const food=new fruit("apple");
+    console.log(food.eat); 
+  </script> 
+</body>
+</html>

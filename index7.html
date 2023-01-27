@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /*const arr=[1,2,3]
+    function edit(){
+      "use strict";
+      arr[0]=4;
+      arr[1]=5;
+      arr[2]=6;
+      return arr;
+    }
+    console.log(edit()) */
+
+    /*function MM(){
+      const Data={
+        "PI":3.1417
+      };
+      Object.freeze(Data); // Freeze endeyaderg
+      try{
+        Data.PI=990;
+      }catch(ex){
+        console.log(ex);
+      }
+      return Data.PI;
+    }
+    const PI= MM()
+  console.log(PI) */
+
+  /*
+  function my(x){    
+     return x;         ===========   const my=(x)=>x;         
+  }
+  X=my(x); 
+  */
+
+ // const myC=(arr1,arr2)=> arr1.concat(arr2); 
+ //  console.log(myC([1,2],[3,4,5]))
+
+ /*const arr= [4,5.6,-9.8,3.14,42,6,8.34,-2]
+ const myF=(squaredII)=>{
+    const squaredI2=squaredII.filter(num => Number.isInteger(num) && num > 0).map(XX=>XX*XX);
+    return squaredI2;
+ }
+ const squaredI=myF(arr);
+ console.log(squaredI); //2:50  
+  
+ const i=(function(){
+  return function i(num,value =1){
+    return num+value; 
+  }
+ })();
+ console.log(i(5,2));
+ console.log(i(5)); */  
+
+/*const sum=(function(){             //                const sum=(function(){         
+  return function(x,y,z,a){             //   ========    return function sum(...b){
+    const b=[x,y,z,a];                    //               return b.reduce((a,b) => a+b,
+    return b.reduce((a,b) => a+b,0)       //                      0); }; })();
+  }
+})()
+ console.log(sum(2,3,4,5)) */ 
+ 
+  const arr1=["A","B","C","D"];
+  let arr2;
+  (function(){
+    arr2=[...arr1];
+    arr1[0]="a";
+  })(); 
+console.log(arr2)
+  </script>
+</body>
+</html>

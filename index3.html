@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var data={
+      "2548":{
+        "album":"tikur Sew",
+        "artist":"teddy Afro",
+        "tracks":[
+          "Minilik",
+          "Ethiopia",
+          "Naet"
+        ]
+      },
+      "2468":{
+        "album":"sewdelat",
+        "artist":"Maddingo",
+        "tracks":[
+          "sewedlat1",
+          "Ethiopia1",
+          "Gonder"
+        ]
+      },
+      "1245":{
+        "artist":"Em Kinine",
+        "tracks":[]
+      },
+      "5439":{
+        "album":"Kinine Kinene",
+      }
+  };
+  var copyData=JSON.parse(JSON.stringify(data));
+
+  function updateR(id,prop,value){
+   if(value === ""){
+    delete data[id][prop];
+   } else if(prop === "tracks"){
+    data[id][prop] = data[id][prop] || [];
+    data[id][prop].push(value);
+   }else if(prop === "tracks"){
+    data[id][prop] = value
+   }
+   return data;
+  }
+  updateR("5439","tracks","Bedada");
+  //console.log(updateR("5439","tracks","sewdelat2"));
+  //console.log(data)
+  //console.log(copyData); 2:10:00
+  </script>
+</body>
+</html>

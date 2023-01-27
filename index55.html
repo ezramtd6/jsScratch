@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var Contact=[
+      {
+        "name":"Ezra",
+        "age":22,
+        "phone":0945762877,
+        "status":["A","B"]
+      },
+      {
+        "name":"Eyassu",
+        "age":24,
+        "phone":0988929292,
+        "sex":"male"
+      },
+      {
+        "name":"Babi",
+        "age":23,
+        "phone":0953147601,
+        "job":"online"
+      }
+    ];
+    function cheCk(Name,Phone){
+      for(var i=0;i<Contact.length;i++){
+        if(Contact[i]["name"] === Name){
+          return Contact[i][Phone] || "No Phone Number";
+        }
+      }
+      return "No Contact Number";
+    }
+    console.log(cheCk("Babii","sex"));
+  </script>
+</body>
+</html>

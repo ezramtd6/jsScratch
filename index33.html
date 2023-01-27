@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var data={
+      "2548":{
+        "album":"tikur Sew",
+        "artist":"teddy Afro",
+        "tracks":[
+          "Minilik",
+          "Ethiopia",
+          "Naet"
+        ]
+      },
+      "2468":{
+        "album":"sewdelat",
+        "artist":"Maddingo",
+        "tracks":[
+          "sewedlat1",
+          "Ethiopia1",
+          "Gonder"
+        ]
+      },
+      "1245":{
+        "artist":"Em Kinine",
+        "tracks":[]
+      },
+      "5439":{
+        "album":"Kinine Kinene",
+      }
+  };
+  var copyData=JSON.parse(JSON.stringify(data));
+  function aDD(id,prog,value){
+    if(value === ""){
+      delete data[id][prog];
+    } else if(prog === "tracks"){
+     // data[id][prog] = data[id][prog] || [];
+     // data[id][prog].push(value);
+      data[id][prog]=value;
+    }
+    return data;
+  }
+
+  console.log(aDD("5439","tracks","Afar"));
+  </script>
+</body>
+</html>

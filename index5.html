@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var friends=[
+      {
+        "name":"Ezra",
+        "lname":"Mekuria",
+        "number":0987654321,
+        "likes":["coding","soccer","sleeping"]
+      },
+      {
+        "name":"Ammina",
+        "lname":"Elias",
+        "number":0944260600,
+        "likes":["reading","film","ps"]
+      },
+      {
+        "name":"Biniyam",
+        "lname":"Getachew",
+        "number":0988765432,
+        "likes":["Drive","swim"]
+      },
+      {
+        "name":"Yabsira",
+        "lname":"Mezgebu",
+        "number":0953147601,
+        "likes":["Work"]
+      }
+    ];
+    function ADD(N,L){
+      for(var ii=0;ii < friends.length; ii++){
+       if(friends[ii].name === N){
+        return friends[ii] || "No Property";
+       }
+      }
+      return "No Contact";
+    }
+    console.log(ADD("Yabsira","likes"))
+  </script>
+</body>
+</html>
